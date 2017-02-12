@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css?v=100013" rel="stylesheet">
+  </head>
+  <body>
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-5">
+					<h2> use arrows to clean the board <span id="victorylabel" class="label label-success hidden">GOOD!</span> <span id="endlabel" class="label label-danger hidden">THE END</span></h2>
+				</div>
+				<div class="col-xs-2 col-xs-offset-4">
+					<h2>score <span id="score" class="label label-info">0</span></h2>
+				</div>
+				<div class="col-xs-1">
+					<h4>bonus <span id="bonus" class="label label-default">0</span></h4><br />
+					<h4>level <span id="level" class="label label-default">1</span></h4>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
+				<div class="table-responsive">
+					<table id="#game_table" class="table table-bordered">
+						<tr>
+							<td id="grid00" data-row="0" data-col="0"><div class="event badge" id="pedina" draggable="true"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div></td>
+							<td id="grid01" data-row="0" data-col="1"></td>
+							<td id="grid02" data-row="0" data-col="2"></td>
+							<td id="grid03" data-row="0" data-col="3"></td>
+							<td id="grid04" data-row="0" data-col="4"></td>
+							<td id="grid05" data-row="0" data-col="5"></td>
+						</tr>
+						<tr>
+							<td id="grid10" data-row="1" data-col="0"></td>
+							<td id="grid11" data-row="1" data-col="1"></td>
+							<td id="grid12" data-row="1" data-col="2"></td>
+							<td id="grid13" data-row="1" data-col="3"></td>
+							<td id="grid14" data-row="1" data-col="4"></td>
+							<td id="grid15" data-row="1" data-col="5"></td>
+						</tr>
+						<tr>
+							<td id="grid20" data-row="2" data-col="0"></td>
+							<td id="grid21" data-row="2" data-col="1"></td>
+							<td id="grid22" data-row="2" data-col="2"></td>
+							<td id="grid23" data-row="2" data-col="3"></td>
+							<td id="grid24" data-row="2" data-col="4"></td>
+							<td id="grid25" data-row="2" data-col="5"></td>
+						</tr>
+						<tr>
+							<td id="grid30" data-row="3" data-col="0"></td>
+							<td id="grid31" data-row="3" data-col="1"></td>
+							<td id="grid32" data-row="3" data-col="2"></td>
+							<td id="grid33" data-row="3" data-col="3"></td>
+							<td id="grid34" data-row="3" data-col="4"></td>
+							<td id="grid35" data-row="3" data-col="5"></td>
+						</tr>
+						<tr>
+							<td id="grid40" data-row="4" data-col="0"></td>
+							<td id="grid41" data-row="4" data-col="1"></td>
+							<td id="grid42" data-row="4" data-col="2"></td>
+							<td id="grid43" data-row="4" data-col="3"></td>
+							<td id="grid44" data-row="4" data-col="4"></td>
+							<td id="grid45" data-row="4" data-col="5"></td>
+						</tr>
+						<tr>
+							<td id="grid50" data-row="5" data-col="0"></td>
+							<td id="grid51" data-row="5" data-col="1"></td>
+							<td id="grid52" data-row="5" data-col="2"></td>
+							<td id="grid53" data-row="5" data-col="3"></td>
+							<td id="grid54" data-row="5" data-col="4"></td>
+							<td id="grid55" data-row="5" data-col="5"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js?v=100047"></script>
+  </body>
+</html>
