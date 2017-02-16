@@ -42,20 +42,20 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* STYLES GO HERE */
 	td {
-		height: 50px!important;
-		min-height: 50px!important;
-		max-height: 50px!important;
+		height: 55px!important;
+		min-height: 55px!important;
+		max-height: 55px!important;
 		font-size: 20px!important;
-		line-height:30px!important;
+		line-height:25px!important;
 	}
 	#pedina {
 		font-size: 20px;
-		line-height:30px;
+		line-height:25px;
 	}
 
 	#pedina>span {
 		font-size: 20px;
-		line-height:30px;
+		line-height:25px;
 	}
 
 }
