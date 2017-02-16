@@ -132,6 +132,34 @@ function muovipedina() {
 
 $(document).ready(function(){
 	init(0);
+	
+	$(".casella").click(function(e){
+		e.preventDefault();
+		var orig = {};
+		orig = $("#pedina").parent();
+		window.ox = orig.data("row");
+		window.oy = orig.data("col");
+		console.log($(this).attr("id"));
+		if (($(this).data("row") == window.ox && ($(this).data("col")==(window.oy+1) || $(this).data("col")==(window.oy-1))) || ($(this).data("col") == window.oy && ($(this).data("row")==(window.ox+1) || $(this).data("row")==(window.ox-1)))) 
+		{
+			console.log("good");
+			if (window.victory===0) {
+				if (window.firstmove==0) {
+					$("#victorylabel").addClass("hidden");
+					window.firstmove = 1;
+				}
+				window.dx = $(this).data("row");
+				window.dy = $(this).data("col");
+				muovipedina();
+			} else {
+				console.log("no movements allowed!");
+				return;
+			}
+		} else {
+			return;
+		}
+	});
+	
 	$(document).keydown(function(e) {
 		var orig = {};
 		orig = $("#pedina").parent();
