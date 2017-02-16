@@ -2,7 +2,11 @@
 	background-color: #eee;
 }
 
-table td {
+table,tr {
+	position: relative;
+}
+
+td {
 	width: 16.666%!important;
 	min-width: 16.666%!important;
 	max-width: 16.666%!important;
@@ -13,18 +17,45 @@ table td {
 	line-height:60px!important;
 	text-align: center;
 }
+.page-header {
+    margin: 0px 0 0px;
+}
 
 #pedina {
-	width: 100%;
-	font-size: 32px;
+	width: 90%;
+	font-size: 28px;
 	line-height:60px;
 }
 
 #pedina>span {
-	font-size: 32px;
+	font-size: 28px;
 	line-height:60px;
 }
 
 .badge {
 	background-color: #2e6da4;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+	td {
+		height: 50px!important;
+		min-height: 50px!important;
+		max-height: 50px!important;
+		font-size: 20px!important;
+		line-height:30px!important;
+	}
+	#pedina {
+		font-size: 20px;
+		line-height:30px;
+	}
+
+	#pedina>span {
+		font-size: 20px;
+		line-height:30px;
+	}
+
 }
